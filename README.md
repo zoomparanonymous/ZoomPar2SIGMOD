@@ -37,7 +37,7 @@ Then, type the following command to run the demo for the synthetic data:
 Among real-world datasets used in our paper, we provide demo scripts for US Stock data and KR Stock data.
 We provide the demo scripts for ZoomPar2.
 You first download the US Stock data and KR Stock data with the following links:
-[US Stock data](https://drive.google.com/file/d/1-1KkGo2HRhRK8u8aHRXA3iYOGjgKFrVd/view?usp=sharing)
+[US Stock data](https://drive.google.com/file/d/1-1KkGo2HRhRK8u8aHRXA3iYOGjgKFrVd/view?usp=sharing) and
 [KR Stock data](https://drive.google.com/file/d/1n5Z7TI9xPNg_ktNGxdWcxfTMV5fDC6-m/view?usp=sharing)
 
 Then, you extract the zip file and move the extracted folder to `data` folder.
