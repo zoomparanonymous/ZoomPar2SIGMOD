@@ -59,8 +59,18 @@ zoompar2_time = toc(zoompar2_start);
 
 zoompar2_error = pf2fitout2(Y,Q,H,V,W,size(Y,1));
 
-fprintf('Running time of ZoomPar2: %4.2f second:\n', zoompar2_time);
-fprintf('Error of ZoomPar2: %5.1e:\n', zoompar2_error);
+fprintf('Running time of ZoomPar2: %4.2f second\n', zoompar2_time);
+fprintf('Error of ZoomPar2: %5.1e\n', zoompar2_error);
 
+Constraints = [0 0];
+Options = [1e-6 Maxiters 2 0 0 0 0];
 
+als_start = tic;
+[H, V, W, Q, ~, ~]=parafac2_sparse_paper_version(Y,R,Constraints,Options);
+als_time = toc(als_start);
+
+als_error = pf2fitout2(Y,Q,H,V,W,size(Y,1));
+
+fprintf('Running time of PARAFAC2-ALS: %4.2f second\n', als_time);
+fprintf('Error of PARAFAC2-ALS: %5.1e\n', als_error);
 

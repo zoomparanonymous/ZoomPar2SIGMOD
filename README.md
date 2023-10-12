@@ -24,7 +24,9 @@ We provide demo scripts for generating synthetic tensor data and running ZoomPar
 First, you run MATLAB, and type the following commands in MATLAB.
 
 Before you run our proposed method, you should add paths into MATLAB environment. Please type the following command in MATLAB:
-    `addPaths`
+    ```
+    run addPaths.m
+    ```
 
 Then, type the following command to run the demo for the synthetic data:
     ```
@@ -32,18 +34,23 @@ Then, type the following command to run the demo for the synthetic data:
     ```
 
 ### How to run for real-world data
-Among real-world datasets used in our paper, we provide a demo script for US Stock data.
-We provide the demo script for ZoomPar2.
-You first download the US Stock data in our hompage: 
+Among real-world datasets used in our paper, we provide demo scripts for US Stock data and KR Stock data.
+We provide the demo scripts for ZoomPar2.
+You first download the US Stock data and KR Stock data with the following links:
+[US Stock data](https://drive.google.com/file/d/1-1KkGo2HRhRK8u8aHRXA3iYOGjgKFrVd/view?usp=sharing)
+[KR Stock data](https://drive.google.com/file/d/1n5Z7TI9xPNg_ktNGxdWcxfTMV5fDC6-m/view?usp=sharing)
 
 Then, you extract the zip file and move the extracted folder to `data` folder.
 If data cannot be loaded, check the path and change the path in the script.
+(Note that You can download other (raw) data from the links ([Video](https://github.com/OsmanMalik/tucker-tensorsketch), [Boat](http://changedetection.net/), [Traffic](https://github.com/florinsch/BigTrafficData)))
 
 You run MATLAB, and type the following commands in MATLAB.
 
 You should add paths into MATLAB environment before you run our proposed method. Please type the following command in MATLAB:
-    `addPaths`
+    ```
+    run addPaths.m
+    ```
 
 We provide demo scripts to run our method ZoomPar2 for real-world datasets.
 Then, type the following command to run the demo:
-    `run demo_us.m`
+    `run demo_us.m` or `run demo_kr.m`
