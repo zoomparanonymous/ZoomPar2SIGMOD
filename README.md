@@ -18,6 +18,8 @@ We use the following libraries:
 
 ## Demo
 We provide demo scripts for running ZoomPar2 on a synthetic tensor and a real-world tensor.
+Note that you should download `Tensor Toolbox v3.0` and put the directory of `Tensor Toolbox v3.0` in `library` directory before running demo scripts.
+
 
 ### How to run for sample data
 We provide demo scripts for generating synthetic tensor data and running ZoomPar2.
